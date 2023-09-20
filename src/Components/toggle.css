@@ -1,0 +1,43 @@
+form.table-dark {
+    background: #5a3e5b;
+
+}
+
+.form-floating>label {
+    color: black;
+}
+
+button.btn {
+    width: 100%;
+    background-color: black;
+    color: white;
+}
+
+button.btn:hover {
+    color: white;
+    font-weight: bold;
+}
+
+.create-container form {
+    box-shadow: 0px 0px 9px 0px #972b97;
+}
+
+.col-12.mt-4.table-sec.table-dark {
+    background-color: #5a3e5b;
+}
+
+.col-12.mt-4.table-sec.table-dark table {
+    color: white;
+}
+
+.create-btn {
+    text-align: end;
+}
+
+.col-12.mt-4.table-sec {
+    box-shadow: 0px 0px 9px 0px #972b97;
+}
+
+.update-container .col-12.p-5.table-dark{
+    background-color: #5a3e5b;
+}
