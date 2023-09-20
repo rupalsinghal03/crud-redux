@@ -44,7 +44,7 @@ function Update() {
 
               </div>
               <div className="form-floating mb-3">
-                <input type="email" className="form-control" id="floatingInput" placeholder="enter email" value={uemail} onChange={e => setEmail(e.target.value)} />
+                <input type="text" className="form-control" id="floatingInput" placeholder="enter email" value={uemail} onChange={e => setEmail(e.target.value)} />
                 <label htmlFor="floatingInput">Description</label>
 
               </div>
