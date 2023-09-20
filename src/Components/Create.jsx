@@ -6,6 +6,7 @@ import './toggle.css'
 function Create() {
     const [name, setName] = useState('')
     const [email, setEmail] = useState('')
+    const [status, setStatus] = useState('')
     const [tabledark, settabledark] = useState('')
     const users = useSelector((state) => state.users)
     const navigate = useNavigate()
@@ -13,7 +14,7 @@ function Create() {
 
     const handleSubmit = (e) => {
         e.preventDefault()
-        dispatch(addUser({ id: users[users.length - 1].id + 1, name, email }))
+        dispatch(addUser({ id: users[users.length - 1].id + 1, name, email,status }))
         navigate('/')
     }
     return (
@@ -39,6 +40,11 @@ function Create() {
                             <div className="form-floating mb-3">
                                 <input type="text" className="form-control" id="floatingTextarea" placeholder="enter description" onChange={(e) => setEmail(e.target.value)} />
                                 <label htmlFor="floatingTextarea">Description</label>
+
+                            </div>
+                            <div className="form-floating mb-3">
+                                <input type="text" className="form-control" id="floatingTextarea" placeholder="enter Status" onChange={(e) => setStatus(e.target.value)} />
+                                <label htmlFor="floatingTextarea">Status</label>
 
                             </div>
 

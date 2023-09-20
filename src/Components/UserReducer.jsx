@@ -8,12 +8,13 @@ const userSlice = createSlice({
             state.push(action.payload)
         },
         updateUser: (state, action) => {
-            const { id, name, email } = action.payload;
+            const { id, name, email, status } = action.payload;
             console.log(action.payload)
             const uu = state.find(user => user.id == id);
             if (uu) {
                 uu.name = name;
                 uu.email = email;
+                uu.status = status;
             }
         },
         deleteUser: (state, action) => {
@@ -24,6 +25,7 @@ const userSlice = createSlice({
             }
         }
     }
+
 })
-export const { addUser, updateUser,deleteUser } = userSlice.actions
+export const { addUser, updateUser, deleteUser } = userSlice.actions
 export default userSlice.reducer;
